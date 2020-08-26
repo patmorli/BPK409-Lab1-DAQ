@@ -58,7 +58,7 @@ void loop() {
     Serial.print("\t");
     Serial.print(double(accel.getZ())/256);
     Serial.print("\t");
-    Serial.print(millis());
+    Serial.print(millis()); // uncomment this if you want to try the experiment in the serial plotter
     Serial.println();
   }
 }

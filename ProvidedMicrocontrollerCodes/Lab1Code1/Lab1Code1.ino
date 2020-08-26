@@ -27,6 +27,7 @@
   license).
 
   Distributed as is; no warrenty given.
+
 */
 
 // To do: change Serial monitor baud rate to 56700
@@ -58,7 +59,7 @@ void loop() {
     Serial.print("\t");
     Serial.print(double(accel.getZ())/1024);
     Serial.print("\t");
-    Serial.print(millis());
-    Serial.println();
+    Serial.print(millis()); // uncomment this if you want to try the experiment in the serial plotter
+    Serial.println(); 
   }
 }
