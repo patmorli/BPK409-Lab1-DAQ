@@ -1,4 +1,12 @@
 /*
+ * This code measures 200Hz data with 8G from the Sparkfun Accelerometer
+ * and logs the data to a micro SD in the Sparkfun OpenLog
+ * It is based on the Library for the MMA8452Q 
+ * and the Library for the SparkFun Qwiic OpenLog
+ * Modified by Patrick Mayerhofer July 2020
+ */
+
+/*
   Library for the MMA8452Q
   By: Jim Lindblom and Andrea DeVore
   SparkFun Electronics
@@ -49,6 +57,7 @@ void setup() {
   myLog.append(filename);
 
   accel.setDataRate(ODR_200);
+  accel.setScale(SCALE_8G);
 }
 
 void loop() {

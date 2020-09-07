@@ -1,4 +1,10 @@
 /*
+ * * This code measures 200Hz data with 8G from the Sparkfun Accelerometer
+ * It is based on the Library for the MMA8452Q
+ * Modified by Patrick Mayerhofer July 2020
+ */
+
+/*
   Library for the MMA8452Q
   By: Jim Lindblom and Andrea DeVore
   SparkFun Electronics
