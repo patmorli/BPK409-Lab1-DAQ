@@ -55,7 +55,12 @@ void setup() {
   myLog.begin(); //Open connection to OpenLog (no pun intended)
   delay(500);
   myLog.append(filename);
-
+  
+ if (accel.begin() == false) {
+    myLog.println("Not Connected. Please check connections and read the hookup guide.");
+    while (1);
+ }
+  
   accel.setDataRate(ODR_200);
   accel.setScale(SCALE_8G);
 }
