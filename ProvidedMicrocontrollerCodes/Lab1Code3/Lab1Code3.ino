@@ -43,7 +43,7 @@
 MMA8452Q accel;                   // create instance of the MMA8452 class
 
 void setup() {
-  Serial.begin(56700);
+  Serial.begin(57600);
   Wire.begin();
 
   if (accel.begin() == false) {
