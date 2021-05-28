@@ -45,7 +45,7 @@
 
 OpenLog myLog; //Create instance
 const byte OpenLogAddress = 42; //Default Qwiic OpenLog I2C address
-char filename[12] = "ACCdata.txt";
+char filename[] = "ACCdata.txt";
 
 MMA8452Q accel;                   // create instance of the MMA8452 class
 
